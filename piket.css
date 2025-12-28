@@ -1,71 +1,158 @@
-/* Container Utama */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: url('LINK_FOTO_GITHUB_KAMU') no-repeat center center fixed;
+    /* GANTI LINK DI BAWAH DENGAN LINK GITHUB KAMU */
+    background: url('https://raw.githubusercontent.com/username/repo/main/foto-kamu.jpg') no-repeat center center fixed;
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .glass-effect {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-    padding: 25px;
+    padding: 40px;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    width: 350px;
-    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 320px;
+    text-align: center;
 }
 
-/* Form Styling */
+h2 { color: white; margin-bottom: 25px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #25D366; /* Warna WhatsApp */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-logout { background-color: #ff4757; margin-top: 10px; }
+
+/* Penataan Group untuk Radio dan Checkbox */
 .form-group {
-    margin: 15px 0;
     text-align: left;
+    margin: 15px 0;
+    color: white;
 }
 
 .form-group label {
     font-weight: bold;
     display: block;
-    margin-bottom: 8px;
-}
-
-.radio-group {
-    display: flex;
-    justify-content: space-around;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    border-radius: 8px;
-}
-
-.check-item {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 0.9em;
 }
 
-input[type="text"], input[type="password"] {
-    width: 100%;
+/* Penataan khusus Baris Radio Button (Kelas & Jurusan) */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
     padding: 10px;
-    margin: 10px 0;
     border-radius: 8px;
-    border: none;
-    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
-/* Tombol */
-button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; /* Menghilangkan margin bawah khusus di dalam group */
     cursor: pointer;
-    margin-top: 10px;
+    font-weight: normal;
 }
 
-.btn-send { background-color: #25D366; color: white; }
-.btn-logout { background-color: #ff4757; color: white; }
+/* Penataan khusus List Checkbox (Pelanggaran) */
+.check-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.85em;
+    cursor: pointer;
+}
 
+/* Ukuran Input agar lebih mudah ditekan di HP */
+input[type="radio"], input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Input teks tambahan untuk pelanggaran lain */
+#pelanggaran-lain {
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Penataan Group untuk Radio dan Checkbox */
+.form-group {
+    text-align: left;
+    margin: 15px 0;
+    color: white;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+/* Penataan khusus Baris Radio Button (Kelas & Jurusan) */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; /* Menghilangkan margin bawah khusus di dalam group */
+    cursor: pointer;
+    font-weight: normal;
+}
+
+/* Penataan khusus List Checkbox (Pelanggaran) */
+.check-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.85em;
+    cursor: pointer;
+}
+
+/* Ukuran Input agar lebih mudah ditekan di HP */
+input[type="radio"], input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Input teks tambahan untuk pelanggaran lain */
+#pelanggaran-lain {
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.9);
+}
