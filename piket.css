@@ -1,48 +1,71 @@
+/* Container Utama */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    /* GANTI LINK DI BAWAH DENGAN LINK GITHUB KAMU */
-    background: url('https://raw.githubusercontent.com/username/repo/main/foto-kamu.jpg') no-repeat center center fixed;
+    background: url('LINK_FOTO_GITHUB_KAMU') no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .glass-effect {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
-    padding: 40px;
+    padding: 25px;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    width: 320px;
-    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 350px;
+    color: white;
 }
 
-h2 { color: white; margin-bottom: 25px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+/* Form Styling */
+.form-group {
+    margin: 15px 0;
+    text-align: left;
+}
 
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border: none;
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.9);
 }
 
+.check-item {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Tombol */
 button {
     width: 100%;
     padding: 12px;
-    margin-top: 15px;
     border: none;
     border-radius: 8px;
-    background-color: #25D366; /* Warna WhatsApp */
-    color: white;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-.btn-logout { background-color: #ff4757; margin-top: 10px; }
+.btn-send { background-color: #25D366; color: white; }
+.btn-logout { background-color: #ff4757; color: white; }
+
