@@ -1,0 +1,98 @@
+body {
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://cdn.yupra.my.id/yp/fb90uw64.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 320px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* INPUT SOLID (TIDAK TRANSPARAN) & ANTI-OFFSIDE */
+input[type="text"], 
+input[type="password"],
+textarea {
+    width: 100%;
+    box-sizing: border-box; /* Mencegah input keluar frame */
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff !important; /* Latar belakang putih solid */
+    color: #333333 !important; /* Teks hitam solid */
+    font-size: 16px;
+    opacity: 1 !important;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.password-wrapper input {
+    padding-right: 45px !important;
+}
+
+.toggle-eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #333;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+/* NOTIFIKASI POPUP BAWAH */
+#notification {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 280px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex; align-items: center; gap: 10px;
+    color: white; font-weight: bold;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backdrop-filter: blur(10px);
+}
+
+#notification.show { bottom: 30px; }
+
+/* LAINNYA */
+button {
+    width: 100%; padding: 12px; margin-top: 10px;
+    border: none; border-radius: 8px;
+    background-color: #25D366; color: white;
+    font-weight: bold; cursor: pointer;
+}
+
+.forgot-password {
+    display: block; margin-top: 15px;
+    font-size: 0.8rem; color: white;
+    text-decoration: none; cursor: pointer;
+}
+
+.radio-group {
+    display: flex; justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px; border-radius: 8px; margin-top: 5px;
+}
+
+.form-group { text-align: left; margin: 15px 0; color: white; }
